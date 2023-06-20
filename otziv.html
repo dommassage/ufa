@@ -1,0 +1,119 @@
+<!doctype html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/style1.css">
+<link rel="stylesheet" href="css/fotfooter.css">
+<title>Служба поддержки</title>
+<style>
+    #ReviewSucsecc{
+        width: 50%;
+        height: 30%;
+        position: absolute;
+        left: 25%;
+        top: 35%;
+        background: white;
+        border-radius: 30px;
+        z-index: 1000;
+        text-align:center;
+        font-size: 400%;
+        animation: anim 2s;
+        display: none;
+        font-family: Andale Mono, monospace;
+        border: 4px solid #50c3af;
+    }
+    @keyframes anim{
+        0% {transform: scale(0)}
+        100% {transform: scale(1);}
+    }
+    @media (max-width: 1000px) {
+        body{
+            
+          
+        }
+        .decor{
+            margin-top: 60%;
+            font-size: 36px;
+        }
+   }
+
+</style>
+</head>
+<body>
+    <div id="ReviewSucsecc">
+        Отзыв отправлен
+    </div>
+    <form class="decor">
+        <div class="form-left-decoration"></div>
+        <div class="form-right-decoration"></div>
+        <div class="circle"></div>
+        <div class="form-inner">
+        <h3>Оставить отзыв</h3>
+        <input type="text" placeholder="Ваше имя">
+        <input type="email" placeholder="Email">
+        <textarea placeholder="Отзыв..." rows="3"></textarea>
+        <input id="send" type="submit" value="Отправить">
+        </div>
+    </form>
+    <footer class="footer">
+        <div class="container">
+    
+            <div class="footer__inner">
+                <div class="footer__block">
+                    <h4 class="footer__title">Локация</h4>
+                    <address class="footer__address">
+                        <div>Уфа,Россия</div>
+                    </address>
+                </div>
+    
+                <div class="footer__block">
+                    <h4 class="footer__title">Свяжитесь с нами</h4>
+                    <div class="social  social--footer">
+                        <a class="social__item" href="https://ru-ru.facebook.com" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#facebook"></use>
+                            </svg>
+                        </a>
+                        <a class="social__item" href="https://twitter.com/home" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#twitter"></use>
+                            </svg>
+                        </a>
+                        <a class="social__item" href="https://www.instagram.com" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#linkedin"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="footer__block">
+                    <h4 class="footer__title">О Компании</h4>
+                    <div class="footer__text">
+                        <p>«Домашний уютный массаж «Белскай» ул. комсомольская, дом 3, г.Уфа, Республика Башкортостан, 452000</p>
+                    </div>
+                </div>
+            </div><!-- /.footer__inner -->
+    
+        </div><!-- /.container -->
+    
+        <div class="copyright">
+            <div class="container">
+                <div class="copyright__text">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+        width="50" height="50"
+        viewBox="0 0 50 50"
+        style=" fill:aliceblue;"><path d="M 27 3 A 1.0001 1.0001 0 0 0 26.292969 3.2929688 L 5.2929688 24.292969 A 1.0001 1.0001 0 0 0 5.2929688 25.707031 L 11.292969 31.707031 A 1.0001 1.0001 0 0 0 12.707031 31.707031 L 39.707031 4.7070312 A 1.0001 1.0001 0 0 0 39 3 L 27 3 z M 27.414062 5 L 36.585938 5 L 12 29.585938 L 7.4140625 25 L 27.414062 5 z M 28 22 A 1.0001 1.0001 0 0 0 27.292969 22.292969 L 15.292969 34.292969 A 1.0001 1.0001 0 0 0 15.292969 35.707031 L 21.292969 41.707031 L 27.292969 47.707031 A 1.0001 1.0001 0 0 0 28 48 L 40 48 A 1.0001 1.0001 0 0 0 40.707031 46.292969 L 29.414062 35 L 40.707031 23.707031 A 1.0001 1.0001 0 0 0 40 22 L 28 22 z M 28.414062 24 L 37.585938 24 L 22 39.585938 L 17.414062 35 L 28.414062 24 z M 28 36.414062 L 37.585938 46 L 28.414062 46 L 23.414062 41 L 28 36.414062 z"></path></svg>
+                    <div> <span>Сделано в Уфе</span></div>
+                </div>
+            </div>
+        </div>
+        
+         
+    </footer>
+    <script>
+        let send = document.getElementById("send");
+        send.addEventListener('click',()=>{
+            document.getElementById("ReviewSucsecc").style.display="block"
+        })
+    </script>
+</body>
